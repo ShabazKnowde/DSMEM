@@ -16,7 +16,7 @@ def simulate_long_running_task():
 
 
 
-@app.route('/progress')
+@app.route('/')
 def progress():
     return Response(scrape_website("https://plasticsfinder.com/products/mat"), content_type='text/event-stream')
 
